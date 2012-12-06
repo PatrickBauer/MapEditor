@@ -28,7 +28,6 @@ class MapPanel extends JPanel implements MouseListener, MouseMotionListener, Key
     private Integer mouseX = null, mouseY = null; 
     private ArrayList<Rectangle> collisionBoxes = new ArrayList<>();
     private double scale = 1.0;
-    private JScrollPane scrollPane;
 
     public MapPanel() {
         super();
@@ -141,8 +140,4 @@ class MapPanel extends JPanel implements MouseListener, MouseMotionListener, Key
 
     @Override
     public void keyReleased(KeyEvent e) {}
-
-    void setScrollPane(JScrollPane scrollPane) {
-        this.scrollPane = scrollPane;
-    }
 }
