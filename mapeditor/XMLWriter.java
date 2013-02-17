@@ -10,10 +10,6 @@ import org.jdom2.Element;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
 
-/**
- *
- * @author Patrick
- */
 public class XMLWriter {
 
     public XMLWriter() {
