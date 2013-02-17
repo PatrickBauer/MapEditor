@@ -75,7 +75,16 @@ public class MainWindow extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println(e);
+        if("Save".equals(e.getActionCommand())) {
+            XMLWriter writer = new XMLWriter();
+            writer.generate(this.panel.getCollisionBoxes());
+        }
+        
+        if("Open".equals(e.getActionCommand())) {
+            XMLReader reader = new XMLReader();
+            this.panel.setCollisionBoxes(reader.read());
+            this.panel.repaint();
+        }
     }
     
 }

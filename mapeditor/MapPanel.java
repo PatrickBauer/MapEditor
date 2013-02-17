@@ -123,6 +123,14 @@ class MapPanel extends JPanel implements MouseListener, MouseMotionListener, Key
         //this.scrollPane.getHorizontalScrollBar().setValue((int)(300/this.scale));
     }
     
+    public ArrayList<Rectangle> getCollisionBoxes() {
+        return this.collisionBoxes;
+    }
+    
+    public void setCollisionBoxes(ArrayList<Rectangle> collisionBoxes) {
+        this.collisionBoxes = collisionBoxes;
+    }
+    
     @Override
     public void mouseEntered(MouseEvent e) {}
 
@@ -140,4 +148,5 @@ class MapPanel extends JPanel implements MouseListener, MouseMotionListener, Key
 
     @Override
     public void keyReleased(KeyEvent e) {}
+
 }
